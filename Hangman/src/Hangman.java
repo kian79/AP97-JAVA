@@ -11,21 +11,8 @@ import javax.swing.*;
 public class Hangman {
 
     public static void main(String[] args) throws FileNotFoundException {
-        JFrame myframe=new JFrame("hangman 2.0");
-        myframe.setVisible(true);
-        myframe.setSize(400,750);
-        JButton submit=new JButton("Submit");
-        myframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myframe.setLayout(new GridLayout(0,1));
-        JTextField myText=new JTextField();
-        JLabel man=new JLabel();
-        Circle head=new Circle(200,200,40);
-        myframe.add(man);
-        myframe.add(myText);
-        myframe.add(submit);
-        submit.setBackground (Color.CYAN);
         while (true) {
-            File file = new File("c://movie.txt");
+            File file = new File("movie.txt");
             Scanner in = new Scanner(file);
             ArrayList<String> words = new ArrayList<>();
             while (in.hasNextLine()) {
